@@ -1,52 +1,54 @@
-// Seleccionamos los cuadros
-const homeCuadro = document.getElementById('home-cuadro');
-const gamesCuadro = document.getElementById('games-cuadro');
-const softwareCuadro = document.getElementById('software-cuadro');
-const plusCuadro = document.getElementById('plus-cuadro');
-const helpCuadro = document.getElementById('help-cuadro');
+const sidebar = document.querySelector(".sidebar");
+const sidebarToggler = document.querySelector(".sidebar-toggler");
 
-// Mostramos el cuadro de inicio por defecto
+sidebarToggler.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+});
+
+const homeCuadro = document.getElementById('home-cuadro');
+
 window.onload = function() {
   homeCuadro.style.display = 'block';
 }
 
-// Eventos para cada enlace
-document.getElementById('home').addEventListener('click', () => {
-  homeCuadro.style.display = 'block';
-  gamesCuadro.style.display = 'none';
-  softwareCuadro.style.display = 'none';
-  plusCuadro.style.display = 'none';
-  helpCuadro.style.display = 'none';
-});
+function home(){
+  document.getElementById("home-cuadro").style.display = "block";
+  document.getElementById("home-game").style.display = "none";
+  document.getElementById("home-soft").style.display = "none";
+  document.getElementById("home-plus").style.display = "none";
+  document.getElementById("home-help").style.display = "none";
+};
 
-document.getElementById('games').addEventListener('click', () => {
-  homeCuadro.style.display = 'none';
-  gamesCuadro.style.display = 'block';
-  softwareCuadro.style.display = 'none';
-  plusCuadro.style.display = 'none';
-  helpCuadro.style.display = 'none';
-});
+function game(){
+  document.getElementById("home-cuadro").style.display = "none";
+  document.getElementById("home-game").style.display = "block";
+  document.getElementById("home-soft").style.display = "none";
+  document.getElementById("home-plus").style.display = "none";
+  document.getElementById("home-help").style.display = "none";
+};
 
-document.getElementById('software').addEventListener('click', () => {
-  homeCuadro.style.display = 'none';
-  gamesCuadro.style.display = 'none';
-  softwareCuadro.style.display = 'block';
-  plusCuadro.style.display = 'none';
-  helpCuadro.style.display = 'none';
-});
+function soft(){
+  document.getElementById("home-cuadro").style.display = "none";
+  document.getElementById("home-game").style.display = "none";
+  document.getElementById("home-soft").style.display = "block";
+  document.getElementById("home-plus").style.display = "none";
+  document.getElementById("home-help").style.display = "none";
+};
 
-document.getElementById('plus').addEventListener('click', () => {
-  homeCuadro.style.display = 'none';
-  gamesCuadro.style.display = 'none';
-  softwareCuadro.style.display = 'none';
-  plusCuadro.style.display = 'block';
-  helpCuadro.style.display = 'none';
-});
+function plus(){
+  document.getElementById("home-cuadro").style.display = "none";
+  document.getElementById("home-game").style.display = "none";
+  document.getElementById("home-soft").style.display = "none";
+  document.getElementById("home-plus").style.display = "block";
+  document.getElementById("home-help").style.display = "none";
+};
 
-document.getElementById('help').addEventListener('click', () => {
-  homeCuadro.style.display = 'none';
-  gamesCuadro.style.display = 'none';
-  softwareCuadro.style.display = 'none';
-  plusCuadro.style.display = 'none';
-  helpCuadro.style.display = 'block';
-});
+function help(){
+  document.getElementById("home-cuadro").style.display = "none";
+  document.getElementById("home-game").style.display = "none";
+  document.getElementById("home-soft").style.display = "none";
+  document.getElementById("home-plus").style.display = "none";
+  document.getElementById("home-help").style.display = "block";
+};
+
+

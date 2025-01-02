@@ -1,123 +1,137 @@
-<!--Todos los Derechos de Autor fueron Reservados por XGamesOptimized Copyright © 2024-->
-<!--All Rights Reserved by XGamesOptimized Copyright © 2024-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XGOptimized</title>
+    <title>XGamesOptimized</title>
     <!--Links-->
+    <link rel="shortcut icon" href="/logo-perfil.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="shortcut icon" href="logo-perfil.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-
-
     <aside class="sidebar">
-        <div class="logo">
-            <img src="logo-perfil.png" alt="">
-            <h2>XGOptimized</h2>
-        </div>
-        <ul class="links">
+        <header class="sidebar-header">
+            <a href="#" id="" class="header-logo">
+                <img src="logo-perfil.png" alt="XGamesOptimized">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+        </header>
 
-            <li>
-                <span class="material-symbols-outlined">Home</span>
-                <a href="#"  id="home">Inicio</a>
-            </li>
+        <nav class="sidebar-nav">
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="#" id="home" onclick="home();" class="nav-link">
+                    <span class="nav-icon material-symbols-rounded">Home</span>
+                    <span class="nav-label">Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="games" onclick="game();" class="nav-link">
+                    <span class="nav-icon material-symbols-rounded">stadia_controller</span>
+                    <span class="nav-label">Juegos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="software" onclick="soft();" class="nav-link">
+                    <span class="nav-icon material-symbols-rounded">settings</span>
+                    <span class="nav-label">Programas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="plus" onclick="plus();" class="nav-link">
+                    <span class="nav-icon material-symbols-rounded">bookmark_add</span>
+                    <span class="nav-label">Extras</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="help" onclick="help();" class="nav-link">
+                    <span class="nav-icon material-symbols-rounded">help</span>
+                    <span class="nav-label">Ayuda</span>
+                    </a>
+                </li>
+            </ul>
 
-            <li>
-                <span class="material-symbols-outlined">stadia_controller</span>
-                <a href="#" id="games">Juegos</a>
-            </li>
-
-            <li>
-                <span class="material-symbols-outlined">
-                    settings
-                    </span>
-                <a href="#" id="software">Programas</a>
-            </li>
-
-            <li>
-                <span class="material-symbols-outlined">
-                    add_box
-                    </span>
-                <a href="#" id="plus">Extras</a>
-            </li>
-
-            <li>
-                <span class="material-symbols-outlined">
-                    help
-                    </span>
-                <a href="#" id="help">Ayuda</a>
-            </li>
-
-        </ul>
+        </nav>
     </aside>
 
-    <div id="content">
-        <div id="home-cuadro" class="cuadro home-section">
-            <div class="container">
-                <h3>Bienvenido a mi Sitio Web</h3>
-                <p>Aca Encontraras Mis Proyectos como Juegos Optimizados y Programas Optimizados</p>
-                <p>Muy Pronto!!!</p>
+    <div class="cuadro" id="home-cuadro" style="display: none;">
+        <div class="content">
+            <h2>Bienvenido a mi Sitio Web</h2>
+            <p>Aca Encontraras mis Juegos y Programas</p>
+            <p>Totalmente Optimizados y Libres de Virus!!!</p>
+            <div class="photo">
+                <img src="/logo-perfil.png" alt="">
+                <h2>XGamesOptimized</h2>
             </div>
         </div>
-        <div id="games-cuadro" class="cuadro" style="display: none;">
-            <div class="container">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, aliquid exercitationem recusandae qui earum quas consectetur, soluta error quo sit laboriosam dignissimos illo unde laudantium similique. Similique doloribus vitae quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
+    </div>
+    <div class="cuadro" id="home-game" style="display: none;">
+        <div class="content">
+            <h2>Juegos Optimizados</h2>
+            <p>Juegos Optimizados para PC de Bajos Recursos</p>
+            <p>y libre de Virus</p>
+            <div class="photo">
+                <img src="/logo-perfil.png" alt="">
+                <h2>XGamesOptimized</h2>
             </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam inventore nemo placeat iste cupiditate veniam alias, quo iure dicta corporis id sequi eligendi soluta sit impedit debitis natus aperiam?
+            Porro necessitatibus laudantium nemo! Corporis eos ullam ipsum voluptas molestiae perferendis quaerat architecto, facilis sapiente quisquam et hic praesentium aperiam temporibus blanditiis, cupiditate deleniti suscipit reiciendis! Vel beatae eius repellat!
+            Molestias at qui distinctio saepe ut ratione, impedit praesentium! Nulla iste eaque libero quasi. Adipisci placeat molestiae in odio voluptatum itaque unde corporis quis dolorum vero fuga, ad quaerat magni.
+            Ipsa reprehenderit, inventore officia deleniti sunt quisquam quas provident eveniet atque porro cum quod, veritatis modi illo culpa corrupti dolor suscipit magnam consequuntur ducimus debitis quo. Mollitia alias quibusdam blanditiis?</p>
         </div>
-        <div id="software-cuadro" class="cuadro" style="display: none;">
-            <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, debitis aliquid et id impedit natus aliquam at vel maxime aperiam quam? Inventore ut assumenda consequuntur tenetur excepturi expedita exercitationem accusamus?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-            </div>
+    </div>
+    <div class="cuadro" id="home-soft" style="display: none;">
+        <div class="content">
+            <h2>Programas Optimizados</h2>
+            <p>Programas Premium Gratuitos, Liberados y</p>
+            <p>Optimizados totalmente libres de Virus!!</p>
         </div>
-        <div id="plus-cuadro" class="cuadro" style="display: none;">
-            <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, distinctio rem repudiandae optio iste repellendus esse sequi atque tempora! Aspernatur accusantium consectetur dolorem blanditiis voluptatem reiciendis molestias sequi quam? Rerum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-            </div>
+        <div class="photo">
+            <img src="/logo-perfil.png" alt="">
+            <h2>XGamesOptimized</h2>
         </div>
-        <div id="help-cuadro" class="cuadro" style="display: none;">
-            <div class="container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore voluptatem saepe. Tempora incidunt nulla adipisci eius quisquam distinctio suscipit sit nisi at deserunt. Qui architecto error suscipit blanditiis dolor!</p>
-            </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam inventore nemo placeat iste cupiditate veniam alias, quo iure dicta corporis id sequi eligendi soluta sit impedit debitis natus aperiam?
+            Porro necessitatibus laudantium nemo! Corporis eos ullam ipsum voluptas molestiae perferendis quaerat architecto, facilis sapiente quisquam et hic praesentium aperiam temporibus blanditiis, cupiditate deleniti suscipit reiciendis! Vel beatae eius repellat!
+            Molestias at qui distinctio saepe ut ratione, impedit praesentium! Nulla iste eaque libero quasi. Adipisci placeat molestiae in odio voluptatum itaque unde corporis quis dolorum vero fuga, ad quaerat magni.
+            Ipsa reprehenderit, inventore officia deleniti sunt quisquam quas provident eveniet atque porro cum quod, veritatis modi illo culpa corrupti dolor suscipit magnam consequuntur ducimus debitis quo. Mollitia alias quibusdam blanditiis?</p>
+    </div>
+    <div class="cuadro" id="home-plus" style="display: none;">
+        <div class="content">
+            <h2>Herramientas Utiles</h2>
+            <p>Optimadores y Programas desarrollados por</p>
+            <p>XGamesOptimized, sin Virus!!</p>
         </div>
-      </div>
+        <div class="photo">
+            <img src="/logo-perfil.png" alt="">
+            <h2>XGamesOptimized</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam inventore nemo placeat iste cupiditate veniam alias, quo iure dicta corporis id sequi eligendi soluta sit impedit debitis natus aperiam?
+            Porro necessitatibus laudantium nemo! Corporis eos ullam ipsum voluptas molestiae perferendis quaerat architecto, facilis sapiente quisquam et hic praesentium aperiam temporibus blanditiis, cupiditate deleniti suscipit reiciendis! Vel beatae eius repellat!
+            Molestias at qui distinctio saepe ut ratione, impedit praesentium! Nulla iste eaque libero quasi. Adipisci placeat molestiae in odio voluptatum itaque unde corporis quis dolorum vero fuga, ad quaerat magni.
+            Ipsa reprehenderit, inventore officia deleniti sunt quisquam quas provident eveniet atque porro cum quod, veritatis modi illo culpa corrupti dolor suscipit magnam consequuntur ducimus debitis quo. Mollitia alias quibusdam blanditiis?</p>
+    </div>
+    <div class="cuadro" id="home-help" style="display: none;">
+        <div class="content">
+            <h2>Seccion de Ayuda</h2>
+            <p>Contacto: xgoptimized.contacto@gmail.com</p>
+            <h3>Acerca de XGamesOptimized</h3>
+            <h2>Mas Informacion Pronto!</h2>
+        </div>
+        <div class="photo">
+            <img src="/logo-perfil.png" alt="">
+            <h2>XGamesOptimized</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam inventore nemo placeat iste cupiditate veniam alias, quo iure dicta corporis id sequi eligendi soluta sit impedit debitis natus aperiam?
+            Porro necessitatibus laudantium nemo! Corporis eos ullam ipsum voluptas molestiae perferendis quaerat architecto, facilis sapiente quisquam et hic praesentium aperiam temporibus blanditiis, cupiditate deleniti suscipit reiciendis! Vel beatae eius repellat!
+            Molestias at qui distinctio saepe ut ratione, impedit praesentium! Nulla iste eaque libero quasi. Adipisci placeat molestiae in odio voluptatum itaque unde corporis quis dolorum vero fuga, ad quaerat magni.
+            Ipsa reprehenderit, inventore officia deleniti sunt quisquam quas provident eveniet atque porro cum quod, veritatis modi illo culpa corrupti dolor suscipit magnam consequuntur ducimus debitis quo. Mollitia alias quibusdam blanditiis?</p>
+    </div>
 
-    <!--JS Scripts-->
+    <!--Scripts Links-->
     <script src="index.js"></script>
+    
 </body>
 </html>
