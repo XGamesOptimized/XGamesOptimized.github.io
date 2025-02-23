@@ -1,166 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/*font-family: "Poppins", serif;*/
-
-* {
-    font-family: "Poppins", serif;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body{
-    min-height: 100vh;
-    background-image: url(/background.jpg);
-    background-position: center;
+    font-family: "Arial.", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: url(37924.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
-}
-
-.sidebar {
-    width: 270px;
-    position: fixed;
-    margin: 16px;
-    border-radius: 16px;
-    height: calc(100vh - 32px);
-    background-color: #151a2d;
-    box-shadow: 3px 3px 10px #151a2d;
-    transition: 0.4s ease;
-}
-
-.sidebar.collapsed {
-    width: 85px;
-}
-
-.sidebar-header {
-    display: flex;
-    padding: 25px 20px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-
-}
-
-.sidebar-header .header-logo img {
-    width: 46px;
-    height: 46px;
-    display: block;
-    object-fit: contain;
-    border-radius: 50%;
-}
-
-.sidebar-header .toggler {
-    height: 35px;
-    width: 35px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #151a2d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.4s ease;
-    background: #fff;
-    position: absolute;
-    right: 20px;
-}
-
-.sidebar.collapsed .sidebar-header .toggler {
-    transform: translate(-4px, 65px);
-}
-
-.sidebar-header .toggler span {
-    font-size: 1.75rem;
-    transition: 0.4s ease;
-}
-
-.sidebar-header .toggler:hover {
-    background: #dde4fb;
-}
-
-.sidebar-nav .nav-list {
-     list-style: none;
-     display: flex;
-     flex-direction: column;
-     gap: 4px;
-     padding: 0 15px;
-     transform: translateY(15px);
-     transition: 0.4s ease;
-}
-
-.sidebar-nav .nav-link {
+    background-size: 100%;
     color: #fff;
-    padding: 12px 15px;
-    display: flex;
-    gap: 12px;
-    border-radius: 8px;
-    align-items: center;
-    text-decoration: none;
-    transition: 0.4s ease;
 }
 
-.sidebar-nav .nav-link:hover{
-    color: #151a2d;
-    background: #fff;
+.title{
+    font-family: "Love Light", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.sidebar-nav .nav-link .nav-label {
-    transition: opacity 0.4s ease;
+.container{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.sidebar.collapsed .sidebar-nav .nav-link .nav-label {
-    opacity: 0;
-    pointer-events: none;
-
-}
-
-.sidebar.collapsed .sidebar-nav .primary-nav {
-    transform: translateY(65px);
-}
-
-.sidebar.collapsed .sidebar-header span {
-    transform: rotate(180deg);
-}
-
-.cuadro{
+.child-element{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    background-color: #ff3396;
+    box-shadow: 5px 5px 5px #ff3396;
+    border-radius: 25px;
+    margin: 0 auto;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #151a2d;
-    width: 350px;
-    height: 450px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #151a2d;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
-.content{
-    margin-top: 30px;
+.text{
+    margin-top: 40px;
 }
 
-.photo{
+.sub-text{
     margin-top: 20px;
 }
 
-.photo img{
-    width: 200px;
+.footer{
+    margin-top: 40px;
 }
 
-.cuadro::-webkit-scrollbar{
-    width: 7px;
-    background-color: #151a2d;
-    border-radius: 10px;
+.title_f{
+    font-size: 50px;
 }
-
-.cuadro::-webkit-scrollbar-thumb{
-    width: 7px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
